@@ -4,9 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "repository": "https://github.com/s4ng/typechain.git",
-  "author": "s4ng <zalcls951201@gmail.com>"
+  "author": "s4ng <zalcls951201@gmail.com>",
+  "devDependencies": {
+    "tsc-watch": "^2.2.1"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "typescript": "^3.5.3"
+  }
 }
